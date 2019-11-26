@@ -6,12 +6,10 @@ import Routes from './routes'
 
 function App() {
   return (
-    <div className="container">
-      <div className="content">
+    <div className="container">    
         <Routes />
-      </div>
     </div>
   );
 }
 
-export default render()
+export default App

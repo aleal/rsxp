@@ -1,9 +1,14 @@
 import React from 'react';
 
-// import { Container } from './styles';
+//import Header from '../'
+
+import { Container, Teste } from './styles';
 
 export default function Login() {
   return (
-    <div />
+    <Container>
+      <Teste>TESTANDO</Teste>
+    </Container>
+
   );
 }
