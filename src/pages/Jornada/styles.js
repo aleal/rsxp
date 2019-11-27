@@ -6,11 +6,11 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Title = styled.h1`
-  font-size: 40px;
+export const Title = styled.h2`
+  font-size: 30px;
   color: #fff;
   text-align: center;
-  margin-top: 50px;
+  margin: 35px 0px 40px 0px;
 `;
 
 export const JornadaContainer = styled.div`
@@ -18,6 +18,7 @@ export const JornadaContainer = styled.div`
   flex-direction: column;
   background-color: #4682B4;
   min-height: 200px;
+  min-width: 500px;
   max-width: 700px;
   border-radius: 25px;
   align-self: center;

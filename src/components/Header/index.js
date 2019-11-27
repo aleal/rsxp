@@ -36,12 +36,14 @@ function Header(props) {
           </UserXp>
         </UserPontuacao>
       </UserContainer>
-      <RankingContainer>
-        <RankingButton onClick={handleRanking}>
+     
+        <RankingButton>
           <FaTrophy />
           <h4>Ranking</h4>
         </RankingButton>
-      </RankingContainer>
+      {/*  
+        <RankingContainer>
+      </RankingContainer>*/}
     </Container>
   );
 }

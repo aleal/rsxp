@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #fff;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
   padding: 15px;
   margin: 5px 0px;
-  
+
   svg {
     color: #4682B4;
     width: 52px;
@@ -19,9 +21,9 @@ export const Container = styled.div`
   }
 `;
 
-export const JornadaTitle = styled.h2`
-  margin-top: 30px;
-  text-align: center;
+export const JornadaContainer = styled.div`
+  justify-content: center;
+  align-self: center;
 `;
 
 export const JornadaItemTitle = styled.h4`
