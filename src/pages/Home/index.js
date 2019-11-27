@@ -17,31 +17,33 @@ import {
 import { setData } from '../../redux/actions';
 
 function Home(props) {
-  const { data } = props;
+  const {
+    data: { jornadas },
+  } = props;
   return (
     <Container>
       <Header />
       <Title>Vamos começar nossa jornada?</Title>
       <SubTitle>Escolha sua jornada!</SubTitle>
       <JornadaContainer>
-        <Link to="/Jornada/0">
-          <JornadaButton>
+        <JornadaButton>
+          <Link to="/Jornada/0" title={jornadas[0].descricao}>
             <FaFacebookSquare />
             <h4>Facebook</h4>
-          </JornadaButton>
-        </Link>
-        <Link to="/Jornada/1">
-          <JornadaButton>
+          </Link>
+        </JornadaButton>
+        <JornadaButton>
+          <Link to="/Jornada/1" title={jornadas[1].descricao}>
             <FaYoutubeSquare />
             <h4>Youtube</h4>
-          </JornadaButton>
-        </Link>
-        <Link to="/Jornada/2">
-          <JornadaButton>
+          </Link>
+        </JornadaButton>
+        <JornadaButton>
+          <Link to="/Jornada/2" title={jornadas[2].descricao}>
             <FaGamepad />
             <h4>Flapbird</h4>
-          </JornadaButton>
-        </Link>
+          </Link>
+        </JornadaButton>
       </JornadaContainer>
     </Container>
   );

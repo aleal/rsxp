@@ -5,13 +5,14 @@ export default {
   },
   jornadas: [
     {
-      descricao:"Crie seu prório Facebook",
+      descricao: "Crie seu próprio Facebook",
       icone: "",
-      passos:[
+      passos: [
         {
           nome: "Operadores lógicos",
           descricao: "Aprenda operadores lógicos",
-          conteudo: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operadores_Logicos",
+          conteudo:
+            "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operadores_Logicos",
           ordem: 1,
           feito: false,
           tarefas: [
@@ -22,25 +23,29 @@ export default {
               xp: 10,
               feito: false,
               acertou: false,
-              opt1: "Retorna verdadeiro se ambos os operandos forem verdadeiro.",
+              opt1:
+                "Retorna verdadeiro se ambos os operandos forem verdadeiro.",
               opt2: "Retorna falso se ambos os operandos forem verdadeiro.",
               opt3: "Retorna verdadeiro se apenas um operandor for verdadeiro.",
               opt4: "Retorna false se apenas um operandor for verdadeiro.",
-              resultado: "Retorna verdadeiro se ambos os operandos forem verdadeiro."
+              resultado:
+                "Retorna verdadeiro se ambos os operandos forem verdadeiro."
             }
           ]
         },
         {
           nome: "Condicionais",
           descricao: "Aprenda sobre o condicional if e else",
-          conteudo: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else",
+          conteudo:
+            "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else",
           ordem: 2,
           feito: false,
           tarefas: [
             {
               tipo: "code",
               nome: "IF e Else",
-              descricao: "Compare se a variável x é maior que 5 caso negativo verifique se é maior que 50.",
+              descricao:
+                "Compare se a variável x é maior que 5 caso negativo verifique se é maior que 50.",
               xp: 50,
               feito: false,
               acertou: false,
@@ -48,14 +53,13 @@ export default {
               resultado: ""
             }
           ]
-        },
-        
+        }
       ]
     },
     {
-      descricao:"Crie seu canal no Youtube",
+      descricao: "Crie seu canal no Youtube",
       icone: "",
-      passos:[
+      passos: [
         {
           nome: "Edição de Vídeos",
           descricao: "Aprenda a editar Vídeos",
@@ -66,7 +70,8 @@ export default {
             {
               tipo: "quiz",
               nome: "Editor de vídeos?",
-              descricao: "Qual dos programas abaixo você é um editor de vídeos?",
+              descricao:
+                "Qual dos programas abaixo você é um editor de vídeos?",
               xp: 10,
               feito: false,
               acertou: false,
@@ -77,14 +82,13 @@ export default {
               resultado: "After Effects"
             }
           ]
-        },
-        
+        }
       ]
     },
     {
-      descricao:"Crie seu prório Flapboard",
+      descricao: "Crie seu próprio Flapbird",
       icone: "",
-      passos:[
+      passos: [
         {
           nome: "Nome passo",
           descricao: "Descricao do Passo",
@@ -106,9 +110,8 @@ export default {
               resultado: "Resultado Quiz 1"
             }
           ]
-        },
-        
+        }
       ]
     }
   ]
-}
+};
