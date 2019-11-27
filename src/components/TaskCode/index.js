@@ -1,12 +1,13 @@
-import React from "react";
-import axios from "axios";
-import { connect } from "react-redux";
-import { setTaskResults } from "../../redux/actions";
+import React from 'react';
+import axios from 'axios';
+import { connect } from 'react-redux';
+import { setTaskResults } from '../../redux/actions';
+import { Redirect } from 'react-router-dom';
 
 class Code extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { code: "", resultado: {} };
+    this.state = { code: '', resultado: {} };
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
   }
@@ -14,10 +15,10 @@ class Code extends React.Component {
   onSubmit(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:7777/tasks/correct", {
+      .post('http://localhost:7777/tasks/correct', {
         resposta: this.state.code,
         esperado: this.props.esperado,
-        tipo: "code"
+        tipo: 'code',
       })
       .then(({ data }) => {
         console.log(data);
@@ -33,6 +34,9 @@ class Code extends React.Component {
   }
   render() {
     const { resultado } = this.state;
+    if (resultado.correto) {
+      return <Redirect to="/jornada" />;
+    }
     return (
       <form onSubmit={this.onSubmit}>
         <textarea onChange={this.onChange} value={this.state.code}></textarea>
@@ -42,7 +46,7 @@ class Code extends React.Component {
             <strong>
               {resultado.erro ||
                 `Seu resultado foi: ${resultado.resultadoUser}`}
-            </strong>{" "}
+            </strong>{' '}
             Esperado: {resultado.esperado}
           </div>
         )}
