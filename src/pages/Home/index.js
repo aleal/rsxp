@@ -11,7 +11,6 @@ import {
   SubTitle,
   JornadaContainer,
   JornadaButton,
-  Teste,
 } from './styles';
 
 import { setData } from '../../redux/actions';
@@ -24,19 +23,19 @@ function Home(props) {
       <Title>Vamos começar nossa jornada?</Title>
       <SubTitle>Escolha sua jornada!</SubTitle>
       <JornadaContainer>
-        <Link to="/Jornada/0">
+        <Link to="/Jornada/0" style={{ textDecoration: 'none' }}>
           <JornadaButton>
             <FaFacebookSquare />
             <h4>Facebook</h4>
           </JornadaButton>
         </Link>
-        <Link to="/Jornada/1">
+        <Link to="/Jornada/1" style={{ textDecoration: 'none' }}>
           <JornadaButton>
             <FaYoutubeSquare />
             <h4>Youtube</h4>
           </JornadaButton>
         </Link>
-        <Link to="/Jornada/2">
+        <Link to="/Jornada/2" style={{ textDecoration: 'none' }}>
           <JornadaButton>
             <FaGamepad />
             <h4>Flapbird</h4>
