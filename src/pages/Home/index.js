@@ -1,10 +1,6 @@
 import React from 'react';
 
-import {
-  FaFacebookSquare,
-  FaYoutubeSquare,
-  FaGamepad,
-} from 'react-icons/fa';
+import { FaFacebookSquare, FaYoutubeSquare, FaGamepad } from 'react-icons/fa';
 
 import Header from '../../components/Header';
 

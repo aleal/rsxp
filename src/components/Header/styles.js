@@ -18,6 +18,7 @@ export const UserContainer = styled.div`
 
   h4 {
     color: #fff;
+
   }
 
   svg {

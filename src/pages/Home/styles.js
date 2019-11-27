@@ -7,30 +7,23 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 `;
 
 export const SubTitle = styled.h3`
-  font-size: 24px;
+  font-size: 30px;
   color: #fff;
   text-align: center;
-  margin: 30px 0px 30px 0px;
-`;
-
-export const Teste = styled.div`
-  background-color: #f00;
-  min-height: 200px;
-  max-width: 700px;
-  align-self: center;
+  margin: 30px 0px 60px 0px;
 `;
 
 export const JornadaContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #fff;
+  background-color: #4682B4;
   min-height: 200px;
   max-width: 700px;
   border-radius: 25px;
@@ -42,7 +35,7 @@ export const JornadaContainer = styled.div`
 export const JornadaButton = styled.button.attrs({
   type: 'submit',
 })`
-  background-color: #3999;
+  background-color: #fff;
   border: 0;
   padding: 0 15px;
   margin: 30px;
@@ -55,12 +48,12 @@ export const JornadaButton = styled.button.attrs({
 
   h4 {
     margin: 10px;
-    color: #fff;
+    color: #4682B4;
   }
 
   svg {
     margin-top: 10px;
-    color: #fff;
+    color: #4682B4;
     width: 100px;
     height: auto;
   }
