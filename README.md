@@ -1,8 +1,8 @@
 <h1 align="center">RS/XP</h1>
 
-## Objetivo
+## Objetivo Resumido
 
- * Incentiva e Engajar o jovem ensino médio a seguir uma carreira tecnologia/Programação
+ * Incentiva e Engajar o jovem do ensino médio a seguir uma carreira tecnologia/Programação
 
 ## Publico Alvo
 
