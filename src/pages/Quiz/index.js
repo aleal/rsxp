@@ -1,10 +1,16 @@
 import React from 'react';
-
+import axios from 'axios';
 import { connect } from 'react-redux';
 import Header from '../../components/Header';
 // import JornadaItem from '../../components/JornadaItem';
 
-import { Container, Questao } from './styles';
+import {
+  Container,
+  QuizContainer,
+  Questao,
+  Alternativa,
+  ButtonSubmit,
+} from './styles';
 
 class Quiz extends React.Component {
   constructor(props) {
@@ -33,6 +39,7 @@ class Quiz extends React.Component {
   }
 
   onChange(e) {
+    console.log(e.target.value);
     this.setState({ resposta: e.target.value });
   }
 
@@ -41,29 +48,33 @@ class Quiz extends React.Component {
     if (resultado.correto) {
       return <Redirect to="/jornada" />;
     }
+    const { quiz } = this.props;
     return (
       <form onSubmit={this.onSubmit}>
-        (
         <Container>
           <Header />
-          <Questao>{quiz.descricao}</Questao>
-          <div>
-            {quiz.opts.map((opt, i) => (
-              <span key={i}>
-                <input
-                  type="radio"
-                  name="radio"
-                  onClick={this.onChange}
-                  checked={this.state.resposta === opt}
-                  value={opt}
-                />
-                {opt}
-              </span>
-            ))}
-            <button type="submit">Responder</button>
-          </div>
+          <QuizContainer>
+            <Questao>{quiz.descricao}</Questao>
+            <Alternativa>
+              {quiz.opts.map((opt, i) => (
+                <span key={i}>
+                  <input
+                    type="radio"
+                    name="radio"
+                    onChange={this.onChange}
+                    checked={this.state.resposta === opt}
+                    value={opt}
+                  />
+                  {opt}
+                </span>
+              ))}
+            </Alternativa>
+            <ButtonSubmit>
+              <h4>Enviar</h4>
+            </ButtonSubmit>
+          </QuizContainer>
         </Container>
-        );
+
         {!resultado.correto && (
           <div>
             <strong>Resposta incorreta</strong>
