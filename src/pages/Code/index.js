@@ -1,9 +1,18 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Header from '../../components/Header';
+// import JornadaItem from '../../components/JornadaItem';
+
+import { Container, Questao } from './styles';
 
 export default function Code() {
   return (
-    <div />
+    <Container>
+      <Header />
+      <Questao>Questao</Questao>
+      <div>
+        <input type="text" name="text" value="" />
+      </div>
+    </Container>
   );
 }
