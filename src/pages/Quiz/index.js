@@ -4,21 +4,24 @@ import { connect } from 'react-redux';
 import Header from '../../components/Header';
 // import JornadaItem from '../../components/JornadaItem';
 
-import { Container, Questao } from './styles';
+import { Container, QuizContainer, Questao, Alternativa, ButtonSubmit } from './styles';
 
 function Quiz({ quiz }) {
   return (
     <Container>
       <Header />
-      <Questao>{quiz.descricao}</Questao>
-      <div>
-        {quiz.opts.map((opt, i) => (
-          <span key={i}>
-            <input type="radio" name="radio" value={opt} />
-            {opt}
-          </span>
-        ))}
-      </div>
+      <QuizContainer>
+        <Questao>{quiz.descricao}</Questao>
+        <Alternativa>
+          {quiz.opts.map((opt, i) => (
+            <span key={i}>
+              <input type="radio" name="radio" value={opt} />
+              {opt}
+            </span>
+          ))}
+        </Alternativa>
+        <ButtonSubmit><h4>Enviar</h4></ButtonSubmit>
+      </QuizContainer>
     </Container>
   );
 }
