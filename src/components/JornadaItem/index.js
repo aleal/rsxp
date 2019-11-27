@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { IoIosRocket } from 'react-icons/io';
 
-import { Container, JornadaItemTitle } from './styles';
+import { Container, JornadaContainer, JornadaItemTitle } from './styles';
 
 export default function JornadaItem({ passo, passoId, jornadaId }) {
   const url = '/jornada/quiz';
