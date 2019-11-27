@@ -1,8 +1,8 @@
 <h1 align="center">RS/XP</h1>
 
-## Objetivo
+## Objetivo Resumido
 
- * Incentiva e Engajar o jovem ensino médio a seguir uma carreira tecnologia/Programação
+ * Incentiva e Engajar o jovem do ensino médio a seguir uma carreira tecnologia/Programação
 
 ## Publico Alvo
 
@@ -21,10 +21,6 @@
  * O projeto visa atrair o jovem com um estilo de jogo RPG.
  * Engajar com o compartilhamento da evolução e a competitividade.
  * Orientar o jogador o que deve estudar para atingir seus objetivos. 
-
-## Descrição
-
- * O jovem ao entrar no app se depara com um mapa, que irá mostrar diversas aréas da tecnologia com liguagem bem simpleficada, que ajudará a define um destino(Jornada) com um teste de aptidão(opcional).
 
 ## Descrição
 
