@@ -1,15 +1,15 @@
-import React from "react";
-import "./App.css";
-//import TechList from "./components/TechList";
+import React from 'react';
 
-import Routes from './routes'
+import Routes from './routes';
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <div className="container">    
-        <Routes />
-    </div>
+    <>
+      <GlobalStyle />
+      <Routes />
+    </>
   );
 }
 
-export default App
+export default App;
