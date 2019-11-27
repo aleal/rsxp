@@ -46,7 +46,9 @@ export const QuizContainer = styled.div`
   margin-top: 30px;
 `;
 
-export const ButtonSubmit = styled.div`
+export const ButtonSubmit = styled.button.attrs({
+  type: 'submit',
+})`
   display: flex;
   justify-content: center;
   align-items: center;
