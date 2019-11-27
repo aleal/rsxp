@@ -12,9 +12,9 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/jornada/:id" component={Jornada} />
-        <Route path="/jornada/quiz" component={Quiz} />
-        <Route path="/jornada/code" component={Code} />
+        <Route path="/jornada/:id" exact component={Jornada} />
+        <Route path="/jornada/:id/quiz/:task" component={Quiz} />
+        <Route path="/jornada/:id/code/:task" component={Code} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,19 +1,34 @@
 import React from 'react';
 
+import { connect } from 'react-redux';
 import Header from '../../components/Header';
 import JornadaItem from '../../components/JornadaItem';
-
 import { Container, Title, JornadaContainer } from './styles';
 
-export default function Jornada() {
+function Jornada(props) {
+  const { jornada } = props;
   return (
     <Container>
       <Header />
-      <Title>Título Jornada</Title>
+      <Title>{jornada.descricao}</Title>
       <JornadaContainer>
-        <JornadaItem />
-        <JornadaItem />
+        {jornada.passos.map((passo, i) => (
+          <JornadaItem
+            key={i}
+            passo={passo}
+            passoId={i}
+            jornadaId={props.match.params.id}
+          />
+        ))}
       </JornadaContainer>
     </Container>
   );
 }
+
+function mapStateToProps({ data: { jornadas } }, props) {
+  console.log(props.match.params.id);
+  return {
+    jornada: jornadas[parseInt(props.match.params.id)],
+  };
+}
+export default connect(mapStateToProps)(Jornada);

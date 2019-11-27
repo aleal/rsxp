@@ -5,13 +5,33 @@ export default {
   },
   jornadas: [
     {
-      descricao:"Crie seu prório Facebook",
+      descricao: "Crie seu próprio Facebook",
       icone: "",
-      passos:[
+      passos: [
+        {
+          nome: "Nivelamento inicial",
+          descricao: "Conceitos básicos e avaliação de Nível",
+          conteudo: "",
+          ordem: 0,
+          feito: false,
+          tarefas: [
+            {
+              tipo: "quiz",
+              nome: "Quiz 1",
+              descricao: "Descrição Quiz 1",
+              xp: 10,
+              feito: false,
+              acertou: false,
+              opts: ["op1", "op2", "op3", "op4"],
+              resultado: "Resultado Quiz 1"
+            }
+          ]
+        },
         {
           nome: "Operadores lógicos",
           descricao: "Aprenda operadores lógicos",
-          conteudo: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operadores_Logicos",
+          conteudo:
+            "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operadores_Logicos",
           ordem: 1,
           feito: false,
           tarefas: [
@@ -22,25 +42,30 @@ export default {
               xp: 10,
               feito: false,
               acertou: false,
-              opt1: "Retorna verdadeiro se ambos os operandos forem verdadeiro.",
-              opt2: "Retorna falso se ambos os operandos forem verdadeiro.",
-              opt3: "Retorna verdadeiro se apenas um operandor for verdadeiro.",
-              opt4: "Retorna false se apenas um operandor for verdadeiro.",
-              resultado: "Retorna verdadeiro se ambos os operandos forem verdadeiro."
+              opts: [
+                "Retorna verdadeiro se ambos os operandos forem verdadeiro.",
+                "Retorna falso se ambos os operandos forem verdadeiro.",
+                "Retorna verdadeiro se apenas um operandor for verdadeiro.",
+                "Retorna false se apenas um operandor for verdadeiro."
+              ],
+              resultado:
+                "Retorna verdadeiro se ambos os operandos forem verdadeiro."
             }
           ]
         },
         {
           nome: "Condicionais",
           descricao: "Aprenda sobre o condicional if e else",
-          conteudo: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else",
+          conteudo:
+            "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else",
           ordem: 2,
           feito: false,
           tarefas: [
             {
               tipo: "code",
               nome: "IF e Else",
-              descricao: "Compare se a variável x é maior que 5 caso negativo verifique se é maior que 50.",
+              descricao:
+                "Compare se a variável x é maior que 5 caso negativo verifique se é maior que 50.",
               xp: 50,
               feito: false,
               acertou: false,
@@ -48,14 +73,32 @@ export default {
               resultado: ""
             }
           ]
-        },
-        
+        }
       ]
     },
     {
-      descricao:"Crie seu canal no Youtube",
+      descricao: "Crie seu canal no Youtube",
       icone: "",
-      passos:[
+      passos: [
+        {
+          nome: "Nivelamento inicial",
+          descricao: "Conceitos básicos e avaliação de Nível",
+          conteudo: "",
+          ordem: 0,
+          feito: false,
+          tarefas: [
+            {
+              tipo: "quiz",
+              nome: "Quiz 1",
+              descricao: "Descrição Quiz 1",
+              xp: 10,
+              feito: false,
+              acertou: false,
+              opts: ["op1", "op2", "op3", "op4"],
+              resultado: "Resultado Quiz 1"
+            }
+          ]
+        },
         {
           nome: "Edição de Vídeos",
           descricao: "Aprenda a editar Vídeos",
@@ -66,25 +109,41 @@ export default {
             {
               tipo: "quiz",
               nome: "Editor de vídeos?",
-              descricao: "Qual dos programas abaixo você é um editor de vídeos?",
+              descricao:
+                "Qual dos programas abaixo você é um editor de vídeos?",
               xp: 10,
               feito: false,
               acertou: false,
-              opt1: "Excel",
-              opt2: "Windows",
-              opt3: "After Effects",
-              opt4: "MS-DOS",
+              opts: ["Excel", "Windows", "After Effects", "MS-DOS"],
               resultado: "After Effects"
             }
           ]
-        },
-        
+        }
       ]
     },
     {
-      descricao:"Crie seu prório Flapboard",
+      descricao: "Crie seu próprio Flapbird",
       icone: "",
-      passos:[
+      passos: [
+        {
+          nome: "Nivelamento inicial",
+          descricao: "Conceitos básicos e avaliação de Nível",
+          conteudo: "",
+          ordem: 0,
+          feito: false,
+          tarefas: [
+            {
+              tipo: "quiz",
+              nome: "Quiz 1",
+              descricao: "Descrição Quiz 1",
+              xp: 10,
+              feito: false,
+              acertou: false,
+              opts: ["op1", "op2", "op3", "op4"],
+              resultado: "Resultado Quiz 1"
+            }
+          ]
+        },
         {
           nome: "Nome passo",
           descricao: "Descricao do Passo",
@@ -99,16 +158,12 @@ export default {
               xp: 10,
               feito: false,
               acertou: false,
-              opt1: "op1",
-              opt2: "op2",
-              opt3: "op3",
-              opt4: "op4",
+              opts: ["op1", "op2", "op3", "op4"],
               resultado: "Resultado Quiz 1"
             }
           ]
-        },
-        
+        }
       ]
     }
   ]
-}
+};

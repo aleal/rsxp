@@ -80,7 +80,15 @@ export const RankingContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
 
+export const RankingButton = styled.button.attrs({
+  type: 'submit',
+})`
+  border: 0;
+  padding: 0 15px;
+  border-radius: 10px;
+  background-color: #4682B4;
   h4 {
     color: #fff;
     margin-bottom: 10px;
@@ -93,7 +101,3 @@ export const RankingContainer = styled.div`
     margin: 5px 0px;
   }
 `;
-
-export const RankingButton = styled.button.attrs({
-  type: 'submit',
-})``;

@@ -1,4 +1,5 @@
 const path = require("path");
+
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.js"),
   output: {
@@ -6,7 +7,8 @@ module.exports = {
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "public")
+    contentBase: path.resolve(__dirname, "public"),
+    historyApiFallback: true
   },
   module: {
     rules: [

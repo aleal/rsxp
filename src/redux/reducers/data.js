@@ -8,7 +8,6 @@ function getData() {
 const initialState = getData() || data;
 
 export default function(state = initialState, action) {
-  console.log(state);
   switch (action.type) {
     case SET_DATA:
       return {
