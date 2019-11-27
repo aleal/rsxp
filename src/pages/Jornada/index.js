@@ -3,15 +3,17 @@ import React from 'react';
 import Header from '../../components/Header';
 import JornadaItem from '../../components/JornadaItem';
 
-import { Container, JornadaTitle } from './styles';
-
-import facebookIcon from '../../assets/images/facebook_icon.png';
+import { Container, Title, JornadaContainer } from './styles';
 
 export default function Jornada() {
   return (
     <Container>
       <Header />
-      <JornadaItem iconSrc={facebookIcon} title="Facebook" />
+      <Title>Título Jornada</Title>
+      <JornadaContainer>
+        <JornadaItem />
+        <JornadaItem />
+      </JornadaContainer>
     </Container>
   );
 }
