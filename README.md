@@ -24,10 +24,6 @@
 
 ## Descrição
 
- * O jovem ao entrar no app se depara com um mapa, que irá mostrar diversas aréas da tecnologia com liguagem bem simpleficada, que ajudará a define um destino(Jornada) com um teste de aptidão(opcional).
-
-## Descrição
-
  * O jovem ao entrar no app se depara com um mapa, que irá mostrar diversas aréas da tecnologia com liguagem bem simpleficada, que ajudará a define um destino (Jornada) com um teste de aptidão(opcional).
  * E sabendo onde ele quer chegar, o mapa irá mostrar o trajeto(trilha) até o destino. Esse trajeto será composto por desafios(tarefas) que são testes de conhecimento."
 
