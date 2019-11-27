@@ -1,12 +1,23 @@
 <h1 align="center">RS/XP</h1>
 
-Objetivo:	Incentiva e Engajar o jovem ensino médio a seguir uma carreira tecnologia/Programação
-	
-Publico Alvo:	Aluno do Ensino Médio
-	
-Nome:	
-	
-Solução:	 Um App Rede Social/Game
+## Objetivo
+
+ * Incentiva e Engajar o jovem ensino médio a seguir uma carreira tecnologia/Programação
+
+## Publico Alvo
+
+ * Aluno do Ensino Médio
+
+## Nome do App
+
+ * GOL - Guide of Life
+
+## Solução
+
+ * Um App Rede Social/Game
+
+ 
+
 	
 Objetivos:	"O projeto visa atrair o jovem com um estilo de jogo RPG e engajar com o compartilhamento da evolução e a competitividade.
 Orientar o jogador o que deve estudar para atingir seus objetivos "
