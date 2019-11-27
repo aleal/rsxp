@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 //import TechList from "./components/TechList";
 
-import Routes from './routes'
+import Routes from "./routes";
 
 function App() {
   return (
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default render()
+export default App;

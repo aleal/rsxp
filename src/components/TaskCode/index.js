@@ -1,5 +1,8 @@
 import React from "react";
 import axios from "axios";
+import { connect } from "react-redux";
+import { setTaskResults } from "../../redux/actions";
+
 class Code extends React.Component {
   constructor(props) {
     super(props);
@@ -10,7 +13,6 @@ class Code extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
     axios
       .post("http://localhost:7777/tasks/correct", {
         resposta: this.state.code,
@@ -21,7 +23,7 @@ class Code extends React.Component {
         console.log(data);
         this.setState({ resultado: data });
         if (data.correto) {
-          //redir to tasks
+          this.props.setTaskResults({ id: this.props.id, ...data });
         }
       })
       .catch(e => console.error(e));
@@ -49,4 +51,4 @@ class Code extends React.Component {
   }
 }
 
-export default Code;
+export default connect(null, { setTaskResults })(Code);

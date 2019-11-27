@@ -1,0 +1,1 @@
+export const SET_TASK_RESULT = "SET_TASK_RESULT";
