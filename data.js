@@ -14,7 +14,18 @@ export default {
           conteudo: "",
           ordem: 0,
           feito: false,
-          tarefas: []
+          tarefas: [
+            {
+              tipo: "quiz",
+              nome: "Quiz 1",
+              descricao: "Descrição Quiz 1",
+              xp: 10,
+              feito: false,
+              acertou: false,
+              opts: ["op1", "op2", "op3", "op4"],
+              resultado: "Resultado Quiz 1"
+            }
+          ]
         },
         {
           nome: "Operadores lógicos",
@@ -31,11 +42,12 @@ export default {
               xp: 10,
               feito: false,
               acertou: false,
-              opt1:
+              opts: [
                 "Retorna verdadeiro se ambos os operandos forem verdadeiro.",
-              opt2: "Retorna falso se ambos os operandos forem verdadeiro.",
-              opt3: "Retorna verdadeiro se apenas um operandor for verdadeiro.",
-              opt4: "Retorna false se apenas um operandor for verdadeiro.",
+                "Retorna falso se ambos os operandos forem verdadeiro.",
+                "Retorna verdadeiro se apenas um operandor for verdadeiro.",
+                "Retorna false se apenas um operandor for verdadeiro."
+              ],
               resultado:
                 "Retorna verdadeiro se ambos os operandos forem verdadeiro."
             }
@@ -74,7 +86,18 @@ export default {
           conteudo: "",
           ordem: 0,
           feito: false,
-          tarefas: []
+          tarefas: [
+            {
+              tipo: "quiz",
+              nome: "Quiz 1",
+              descricao: "Descrição Quiz 1",
+              xp: 10,
+              feito: false,
+              acertou: false,
+              opts: ["op1", "op2", "op3", "op4"],
+              resultado: "Resultado Quiz 1"
+            }
+          ]
         },
         {
           nome: "Edição de Vídeos",
@@ -91,10 +114,7 @@ export default {
               xp: 10,
               feito: false,
               acertou: false,
-              opt1: "Excel",
-              opt2: "Windows",
-              opt3: "After Effects",
-              opt4: "MS-DOS",
+              opts: ["Excel", "Windows", "After Effects", "MS-DOS"],
               resultado: "After Effects"
             }
           ]
@@ -111,7 +131,18 @@ export default {
           conteudo: "",
           ordem: 0,
           feito: false,
-          tarefas: []
+          tarefas: [
+            {
+              tipo: "quiz",
+              nome: "Quiz 1",
+              descricao: "Descrição Quiz 1",
+              xp: 10,
+              feito: false,
+              acertou: false,
+              opts: ["op1", "op2", "op3", "op4"],
+              resultado: "Resultado Quiz 1"
+            }
+          ]
         },
         {
           nome: "Nome passo",
@@ -127,10 +158,7 @@ export default {
               xp: 10,
               feito: false,
               acertou: false,
-              opt1: "op1",
-              opt2: "op2",
-              opt3: "op3",
-              opt4: "op4",
+              opts: ["op1", "op2", "op3", "op4"],
               resultado: "Resultado Quiz 1"
             }
           ]

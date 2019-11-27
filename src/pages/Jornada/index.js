@@ -7,14 +7,18 @@ import { Container, Title, JornadaContainer } from './styles';
 
 function Jornada(props) {
   const { jornada } = props;
-  console.log(jornada);
   return (
     <Container>
       <Header />
       <Title>{jornada.descricao}</Title>
       <JornadaContainer>
         {jornada.passos.map((passo, i) => (
-          <JornadaItem key={i} passo={passo} />
+          <JornadaItem
+            key={i}
+            passo={passo}
+            passoId={i}
+            jornadaId={props.match.params.id}
+          />
         ))}
       </JornadaContainer>
     </Container>
