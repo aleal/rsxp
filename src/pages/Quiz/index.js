@@ -1,9 +1,18 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Header from '../../components/Header';
+// import JornadaItem from '../../components/JornadaItem';
+
+import { Container, Questao } from './styles';
 
 export default function Quiz() {
   return (
-    <div />
+    <Container>
+      <Header />
+      <Questao>Questao</Questao>
+      <div>
+        <input type="radio" name="radio" value="opt1" />
+      </div>
+    </Container>
   );
 }
