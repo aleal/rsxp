@@ -11,7 +11,6 @@ import {
   SubTitle,
   JornadaContainer,
   JornadaButton,
-  Teste,
 } from './styles';
 
 import { setData } from '../../redux/actions';
@@ -27,21 +26,33 @@ function Home(props) {
       <SubTitle>Escolha sua jornada!</SubTitle>
       <JornadaContainer>
         <JornadaButton>
-          <Link to="/Jornada/0" title={jornadas[0].descricao}>
+          <Link
+            to="/Jornada/0"
+            title={jornadas[0].descricao}
+            style={{ textDecoration: 'none' }}
+          >
             <FaFacebookSquare />
-            <h4>Facebook</h4>
+            <h4>{jornadas[0].descricao}</h4>
           </Link>
         </JornadaButton>
         <JornadaButton>
-          <Link to="/Jornada/1" title={jornadas[1].descricao}>
+          <Link
+            to="/Jornada/1"
+            title={jornadas[1].descricao}
+            style={{ textDecoration: 'none' }}
+          >
             <FaYoutubeSquare />
-            <h4>Youtube</h4>
+            <h4>{jornadas[1].descricao}</h4>
           </Link>
         </JornadaButton>
         <JornadaButton>
-          <Link to="/Jornada/2" title={jornadas[2].descricao}>
+          <Link
+            to="/Jornada/2"
+            title={jornadas[2].descricao}
+            style={{ textDecoration: 'none' }}
+          >
             <FaGamepad />
-            <h4>Flapbird</h4>
+            <h4>{jornadas[2].descricao}</h4>
           </Link>
         </JornadaButton>
       </JornadaContainer>

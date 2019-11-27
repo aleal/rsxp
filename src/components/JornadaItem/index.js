@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { FaFacebook } from 'react-icons/fa';
+import { IoIosRocket } from 'react-icons/io';
 
 import { Container, JornadaItemTitle } from './styles';
 
-export default function JornadaItem({ title }) {
+export default function JornadaItem({ passo }) {
   return (
-    <Container>
-      <FaFacebook />
-      <JornadaItemTitle>{title}</JornadaItemTitle>
+    <Container title={passo.descricao}>
+      <IoIosRocket />
+      <JornadaItemTitle />
+      <h3>{passo.nome}</h3>
     </Container>
   );
 }

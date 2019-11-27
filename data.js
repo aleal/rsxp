@@ -9,6 +9,14 @@ export default {
       icone: "",
       passos: [
         {
+          nome: "Nivelamento inicial",
+          descricao: "Conceitos básicos e avaliação de Nível",
+          conteudo: "",
+          ordem: 0,
+          feito: false,
+          tarefas: []
+        },
+        {
           nome: "Operadores lógicos",
           descricao: "Aprenda operadores lógicos",
           conteudo:
@@ -61,6 +69,14 @@ export default {
       icone: "",
       passos: [
         {
+          nome: "Nivelamento inicial",
+          descricao: "Conceitos básicos e avaliação de Nível",
+          conteudo: "",
+          ordem: 0,
+          feito: false,
+          tarefas: []
+        },
+        {
           nome: "Edição de Vídeos",
           descricao: "Aprenda a editar Vídeos",
           conteudo: "",
@@ -89,6 +105,14 @@ export default {
       descricao: "Crie seu próprio Flapbird",
       icone: "",
       passos: [
+        {
+          nome: "Nivelamento inicial",
+          descricao: "Conceitos básicos e avaliação de Nível",
+          conteudo: "",
+          ordem: 0,
+          feito: false,
+          tarefas: []
+        },
         {
           nome: "Nome passo",
           descricao: "Descricao do Passo",
