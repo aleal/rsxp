@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Header from '../../components/Header';
-
 import {
   Container,
   Contend,
@@ -9,24 +10,36 @@ import {
   SubTitle,
   JornadaContainer,
   JornadaButton,
-  Teste
+  Teste,
 } from './styles';
 
-export default function Home() {
-  function handleJornada(jornada) {
-    console.log(`Go to ${jornada}`);
-  }
+import { setData } from '../../redux/actions';
 
+function Home(props) {
+  const { data } = props;
   return (
     <Container>
       <Header />
       <Title>Vamos começar nossa jornada?</Title>
       <SubTitle>Escolha sua jornada!</SubTitle>
       <JornadaContainer>
-        <JornadaButton>Facebook</JornadaButton>
-        <JornadaButton>Facebook</JornadaButton>
-        <JornadaButton>Facebook</JornadaButton>
+        <Link to="/Jornada/1">
+          <JornadaButton>Facebook</JornadaButton>
+        </Link>
+        <Link to="/Jornada/2">
+          <JornadaButton>Facebook</JornadaButton>
+        </Link>
+        <Link to="/Jornada/3">
+          <JornadaButton>Facebook</JornadaButton>
+        </Link>
       </JornadaContainer>
     </Container>
   );
 }
+function mapStateToProps({ data }) {
+  console.log(data);
+  return {
+    data,
+  };
+}
+export default connect(mapStateToProps, { setData })(Home);
