@@ -1,15 +1,19 @@
 import React from 'react';
 
+import {
+  FaFacebookSquare,
+  FaYoutubeSquare,
+  FaGamepad,
+} from 'react-icons/fa';
+
 import Header from '../../components/Header';
 
 import {
   Container,
-  Contend,
   Title,
   SubTitle,
   JornadaContainer,
   JornadaButton,
-  Teste
 } from './styles';
 
 export default function Home() {
@@ -23,9 +27,18 @@ export default function Home() {
       <Title>Vamos começar nossa jornada?</Title>
       <SubTitle>Escolha sua jornada!</SubTitle>
       <JornadaContainer>
-        <JornadaButton>Facebook</JornadaButton>
-        <JornadaButton>Facebook</JornadaButton>
-        <JornadaButton>Facebook</JornadaButton>
+        <JornadaButton onClick={() => handleJornada('facebook')}>
+          <FaFacebookSquare />
+          <h4>Facebook</h4>
+        </JornadaButton>
+        <JornadaButton onClick={() => handleJornada('youtube')}>
+          <FaYoutubeSquare />
+          <h4>Youtube</h4>
+        </JornadaButton>
+        <JornadaButton onClick={() => handleJornada('flapbird')}>
+          <FaGamepad />
+          <h4>Flapbird</h4>
+        </JornadaButton>
       </JornadaContainer>
     </Container>
   );

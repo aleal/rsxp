@@ -28,12 +28,15 @@ export const Teste = styled.div`
 `;
 
 export const JornadaContainer = styled.div`
+  display: flex;
   flex-direction: row;
   background-color: #fff;
   min-height: 200px;
   max-width: 700px;
   border-radius: 25px;
   align-self: center;
+  padding: 20px;
+  justify-content: space-around;
 `;
 
 export const JornadaButton = styled.button.attrs({
@@ -42,10 +45,23 @@ export const JornadaButton = styled.button.attrs({
   background-color: #3999;
   border: 0;
   padding: 0 15px;
-  margin-left: 100px;
-  border-radius: 4px;
+  margin: 30px;
+  border-radius: 10px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h4 {
+    margin: 10px;
+    color: #fff;
+  }
+
+  svg {
+    margin-top: 10px;
+    color: #fff;
+    width: 100px;
+    height: auto;
+  }
 `;
