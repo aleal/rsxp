@@ -2,19 +2,19 @@
 
 ## Objetivo Resumido
 
- * Incentiva e Engajar o jovem do ensino médio a seguir uma carreira tecnologia/Programação
+ * Incentivar e Engajar o jovem do ensino médio a seguir uma carreira em tecnologia/Programação
 
 ## Publico Alvo
 
  * Aluno do Ensino Médio
 
-## Nome do App
+## Nome da Solução
 
  * GOL - Guide of Life
 
 ## Solução
 
- * Um App Rede Social/Game
+ * É uma aplicação web no formato Rede Social/Game
 
 ## Objetivos
 
