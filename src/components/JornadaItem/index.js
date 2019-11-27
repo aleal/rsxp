@@ -7,9 +7,6 @@ import { IoIosRocket } from 'react-icons/io';
 import { Container, JornadaContainer, JornadaItemTitle } from './styles';
 
 export default function JornadaItem({ passo, passoId, jornadaId }) {
-  const url = '/jornada/quiz';
-  // let url = '/Jornada/Code';
-
   return (
     <Container>
       <Link
