@@ -1,12 +1,9 @@
 import React from 'react';
 
-<<<<<<< HEAD
 import { FaFacebookSquare, FaYoutubeSquare, FaGamepad } from 'react-icons/fa';
 
-=======
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
->>>>>>> 69cc20925593c3e9f2e92a34c3a6d46ef0888da1
 import Header from '../../components/Header';
 import {
   Container,
@@ -14,10 +11,7 @@ import {
   SubTitle,
   JornadaContainer,
   JornadaButton,
-<<<<<<< HEAD
-=======
   Teste,
->>>>>>> 69cc20925593c3e9f2e92a34c3a6d46ef0888da1
 } from './styles';
 
 import { setData } from '../../redux/actions';
@@ -30,30 +24,24 @@ function Home(props) {
       <Title>Vamos começar nossa jornada?</Title>
       <SubTitle>Escolha sua jornada!</SubTitle>
       <JornadaContainer>
-<<<<<<< HEAD
-        <JornadaButton onClick={() => handleJornada('facebook')}>
-          <FaFacebookSquare />
-          <h4>Facebook</h4>
-        </JornadaButton>
-        <JornadaButton onClick={() => handleJornada('youtube')}>
-          <FaYoutubeSquare />
-          <h4>Youtube</h4>
-        </JornadaButton>
-        <JornadaButton onClick={() => handleJornada('flapbird')}>
-          <FaGamepad />
-          <h4>Flapbird</h4>
-        </JornadaButton>
-=======
+        <Link to="/Jornada/0">
+          <JornadaButton>
+            <FaFacebookSquare />
+            <h4>Facebook</h4>
+          </JornadaButton>
+        </Link>
         <Link to="/Jornada/1">
-          <JornadaButton>Facebook</JornadaButton>
+          <JornadaButton>
+            <FaYoutubeSquare />
+            <h4>Youtube</h4>
+          </JornadaButton>
         </Link>
         <Link to="/Jornada/2">
-          <JornadaButton>Facebook</JornadaButton>
+          <JornadaButton>
+            <FaGamepad />
+            <h4>Flapbird</h4>
+          </JornadaButton>
         </Link>
-        <Link to="/Jornada/3">
-          <JornadaButton>Facebook</JornadaButton>
-        </Link>
->>>>>>> 69cc20925593c3e9f2e92a34c3a6d46ef0888da1
       </JornadaContainer>
     </Container>
   );
